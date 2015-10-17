@@ -1,0 +1,23 @@
+PODS:
+  - PXUtilities (0.1.0):
+    - UIColor-MoreColors
+  - PXWebSnapshot (0.1.0):
+    - PXUtilities
+    - UIView-Screenshot
+  - UIColor-MoreColors (1.0.3)
+  - UIView-Screenshot (0.1.0)
+
+DEPENDENCIES:
+  - PXWebSnapshot (from `../`)
+
+EXTERNAL SOURCES:
+  PXWebSnapshot:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PXUtilities: c1b1892c6e0e0773fa3959ed08dc7a331b3d88c1
+  PXWebSnapshot: d352b178e12acb7f5000fc4257f216383a05ad81
+  UIColor-MoreColors: f05e23f1f9067550ffd5a369479b8cf294d34097
+  UIView-Screenshot: f5638fbcef3037561955c16b98b8ab5e81090490
+
+COCOAPODS: 0.36.4

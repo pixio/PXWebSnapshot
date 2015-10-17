@@ -1,0 +1,35 @@
+{
+  "name": "PXWebSnapshot",
+  "version": "0.1.0",
+  "summary": "Takes a screenshot of a website.",
+  "description": "                       Load the website, waits until it's fully done loading, takes a screenshot.\n",
+  "homepage": "https://git.pixio.com/",
+  "license": "MIT",
+  "authors": {
+    "Daniel Blakemore": "DanBlakemore@gmail.com"
+  },
+  "source": {
+    "git": "git@git.pixio.com:ios-pods/pxwebsnapshot.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "WebSnapshot": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "UIView-Screenshot": [
+
+    ],
+    "PXUtilities": [
+
+    ]
+  }
+}
