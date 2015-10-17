@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PXWebSnapshot"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Takes a screenshot of a website."
   s.description      = <<-DESC
                        Load the website, waits until it's fully done loading, takes a screenshot.
