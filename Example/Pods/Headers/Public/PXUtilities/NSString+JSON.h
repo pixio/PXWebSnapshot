@@ -1,1 +1,1 @@
-../../../PXUtilities/Pod/Classes/NSString+JSON.h
+../../../PXUtilities/NSString+JSON.h

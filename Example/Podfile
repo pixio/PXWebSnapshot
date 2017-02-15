@@ -1,11 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'PXWebSnapshot', :exclusive => true do
+target 'PXWebSnapshot' do
   pod "PXWebSnapshot", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
+target 'Tests' do
   pod "PXWebSnapshot", :path => "../"
-
-
 end

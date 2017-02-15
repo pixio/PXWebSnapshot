@@ -1,6 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PXUtilities" "${PODS_ROOT}/Headers/Public/PXWebSnapshot" "${PODS_ROOT}/Headers/Public/UIColor-MoreColors" "${PODS_ROOT}/Headers/Public/UIView-Screenshot"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PXUtilities" -isystem "${PODS_ROOT}/Headers/Public/PXWebSnapshot" -isystem "${PODS_ROOT}/Headers/Public/UIColor-MoreColors" -isystem "${PODS_ROOT}/Headers/Public/UIView-Screenshot"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Tests-PXUtilities" -l"Pods-Tests-PXWebSnapshot" -l"Pods-Tests-UIColor-MoreColors" -l"Pods-Tests-UIView-Screenshot" -framework "Security" -framework "UIKit"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PXUtilities" "${PODS_ROOT}/Headers/Public/PXWebSnapshot" "${PODS_ROOT}/Headers/Public/UIView-Screenshot"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/PXUtilities" "$PODS_CONFIGURATION_BUILD_DIR/PXWebSnapshot" "$PODS_CONFIGURATION_BUILD_DIR/UIView-Screenshot"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PXUtilities" -isystem "${PODS_ROOT}/Headers/Public/PXWebSnapshot" -isystem "${PODS_ROOT}/Headers/Public/UIView-Screenshot"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"PXUtilities" -l"PXWebSnapshot" -l"UIView-Screenshot" -framework "Security" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

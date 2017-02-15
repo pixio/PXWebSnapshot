@@ -1,1 +1,1 @@
-../../../PXUtilities/Pod/Classes/NSData+JSON.h
+../../../PXUtilities/NSData+JSON.h
